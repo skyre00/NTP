@@ -78,6 +78,7 @@ namespace NTP
         {
             frmHakkinda f = new frmHakkinda();
             f.ShowDialog();
+
         }
 
         private void yazdırToolStripMenuItem_Click(object sender, EventArgs e)
@@ -140,6 +141,11 @@ namespace NTP
             {
                 rtbYazi.SelectionColor = c.Color;
             }
+        }
+
+        private void frmMenu_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

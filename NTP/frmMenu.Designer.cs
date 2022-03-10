@@ -40,6 +40,7 @@
             this.kesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.kopyalaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.yapıştırToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.renkDeğiştirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hakkındaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.kesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,7 +49,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.rtbYazi = new System.Windows.Forms.RichTextBox();
             this.belge = new System.Drawing.Printing.PrintDocument();
-            this.renkDeğiştirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -153,6 +153,13 @@
             this.yapıştırToolStripMenuItem1.Text = "Yapıştır";
             this.yapıştırToolStripMenuItem1.Click += new System.EventHandler(this.yapıştırToolStripMenuItem1_Click);
             // 
+            // renkDeğiştirToolStripMenuItem
+            // 
+            this.renkDeğiştirToolStripMenuItem.Name = "renkDeğiştirToolStripMenuItem";
+            this.renkDeğiştirToolStripMenuItem.Size = new System.Drawing.Size(230, 32);
+            this.renkDeğiştirToolStripMenuItem.Text = "Renk Değiştir";
+            this.renkDeğiştirToolStripMenuItem.Click += new System.EventHandler(this.renkDeğiştirToolStripMenuItem_Click);
+            // 
             // hakkındaToolStripMenuItem
             // 
             this.hakkındaToolStripMenuItem.Name = "hakkındaToolStripMenuItem";
@@ -214,13 +221,6 @@
             // 
             this.belge.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.belge_PrintPage);
             // 
-            // renkDeğiştirToolStripMenuItem
-            // 
-            this.renkDeğiştirToolStripMenuItem.Name = "renkDeğiştirToolStripMenuItem";
-            this.renkDeğiştirToolStripMenuItem.Size = new System.Drawing.Size(230, 32);
-            this.renkDeğiştirToolStripMenuItem.Text = "Renk Değiştir";
-            this.renkDeğiştirToolStripMenuItem.Click += new System.EventHandler(this.renkDeğiştirToolStripMenuItem_Click);
-            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -233,6 +233,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMenu";
             this.TopMost = true;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmMenu_FormClosed);
             this.Load += new System.EventHandler(this.frmMenu_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
